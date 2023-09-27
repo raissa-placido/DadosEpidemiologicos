@@ -1,0 +1,460 @@
+*{
+    max-width: 100%;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+  }
+
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a72c0a;
+    box-shadow: 0.5px 0.5px 10px 0.5px #000;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    z-index: 7;
+  }
+
+  
+
+  main{
+    margin-right: 30px;
+  }
+
+  /* ************
+        CAPA
+  */
+  
+  .fundo{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(30, 18, 4, 0.479), rgba(30, 17, 4, 0.39)), url("https://i0.wp.com/www.cienciaedados.com/wp-content/uploads/2015/12/Conceitos-Fundamentais-de-Estat%C3%ADstica.jpg?fit=2716%2C1810&ssl=1");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .espaco{
+    margin-left: 50px;
+  }
+
+  .fundo h1{
+      color: #fff;
+  }
+
+  .texto {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px; 
+    font-weight: normal; 
+    color: #333; 
+    line-height: 1.5; 
+    text-align: justify;
+  }
+
+  .header-content{
+      margin-bottom: 150px;
+      color:antiquewhite;
+      text-align: center;
+  }
+    
+  .header-content h1{
+      font-size: 8vmin;
+  }
+  
+  .line{
+      width: 250px;
+      height: 4px;
+      background: #b82207;
+      margin: 10px auto;
+      border-radius: 5px;
+      color: #fff;
+  }
+
+  .titulo{
+    text-align: center;
+  } 
+  
+  
+  
+  /*RESTANTE*/
+  
+  body{
+    min-height: 100vh;
+    background: #fcdece;
+  }
+
+  .logo{
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  .side-bar{
+    background: #fff;
+    backdrop-filter:blur(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+    z-index: 6;
+  }
+  
+  .side-bar.active{
+    left: 0;
+  }
+  
+  .side-bar .menu{
+    width: 100%;
+    margin-top: 80px;
+  }
+  
+  .side-bar .menu .item{
+    position:relative;
+    cursor:pointer;
+  }
+  
+  .side-bar .menu .item a{
+    color: #000000;
+    font-size: 19px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+  }
+  
+  .side-bar .menu .item a:hover{
+    background: rgb(243, 184, 157);
+    transition: 0.3s ease;
+  
+  }
+  
+  .side-bar .menu .item i{
+    margin-right: 15px;
+  }
+  
+  .side-bar .menu .item a .dropdown{
+  
+    position: absolute;
+    right:0;
+    margin: 20px;
+    transition: 0.3s ease;
+  }
+  
+  .side-bar .menu .item .sub-menu{
+    background: #fff;
+    display:none;
+  }
+  
+  .side-bar .menu .item .sub-menu a{
+    padding-left: 80px;
+  }
+  
+  .rotate{
+    transform: rotate(90deg);
+  }
+  
+  .close-btn{
+    position: absolute;
+    color: #000000;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+  }
+
+  .menu-btn{
+    color: #fff;
+    font-size: 20px;
+    margin: 0px;
+    cursor:pointer;
+    z-index: 6;
+  }
+
+
+  footer {
+    background-color: #a72c0a;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .footer-top {
+    display: grid;
+    gap: 60px;
+  }
+  
+  .footer-list-title,
+  .footer-text {
+    margin-block-end: 15px;
+  }
+  
+  .contact-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+  }
+  
+  .contact-item:not(:last-child) {
+    margin-block-end: 15px;
+  }
+  
+  .contact-title {
+    font-size: var(--fs-5);
+    font-weight: var(--fw-700);
+  }
+  
+  .footer-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block-start: 15px;
+  }
+  
+  .footer-list:not(.social-list) ion-icon {
+    font-size: 14px;
+  }
+  
+  .footer-bottom {
+    padding-block: 35px;
+    text-align: center;
+    border-block-start: 1px solid var(--cultured_20);
+  }
+  
+  .menu-btn{
+    position: fixed;
+    color: #000000;
+    font-size: 20px;
+    margin: 25px;
+    cursor:pointer;
+    z-index: 6;
+  }
+  
+  /*cartões*/
+  .main-container {
+    grid-area: main;
+    overflow-y: auto;
+    padding: 20px 20px;
+  }
+  
+  .main-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .main-title > p {
+    font-size: 20px;
+  }
+  
+  .main-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 1px solid #d2d2d3;
+    border-radius: 5px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card:first-child {
+    border-left: 7px solid  #9ac2be;
+  }
+  
+  .card:nth-child(2) {
+    border-left: 7px solid #f7c081;
+  }
+  
+  .card:nth-child(3) {
+    border-left: 7px solid #45938b;
+  }
+  
+  .card:nth-child(4) {
+    border-left: 7px solid #ff7857;
+  }
+  
+  .card > span {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card-inner > p {
+    font-size: 18px;
+  }
+  
+  .card-inner > span {
+    font-size: 35px;
+  }
+  
+  
+  
+  .graphBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    min-height: 300px;
+  }
+  
+  
+  .graphBox .box{
+    position: relative;
+    background: #f7f3f3;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 20px;
+  }
+  
+  .graphBox2{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    min-height: 350px;
+  }
+  
+  .graphBox2 .box2{
+    position: relative;
+    background: #f7f3f3;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 20px;
+  }
+  
+  
+  .tituloGrafico{
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .fonte{
+    font-size: 14px;
+    color: #5e5a5a;
+  }
+  
+  .obs{
+    font-size: 18px;
+    color: #b81e1e;
+  }
+  
+  h1{
+    margin: 10px;
+    margin-left: 20px;
+  }
+  
+
+  /*REFERÊNCIAS*/
+  .collapsible {
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active2:after {
+    content: "\2212";
+  }
+  
+  .content2 {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  
+  .content1 {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #c9866b;
+  }
+  
+  #ref{ 
+    background-color: #bb5323;
+    margin: 50px;
+    width: 300px;
+  }
+  #ref-par{
+    color: #fff;
+  }
+
+
+  @media screen and (max-width: 991px){
+    .graphBox{
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 800px){
+    
+    .graphBox{
+      grid-template-columns: 1fr;
+      height: 500px;
+      display: inline;
+      width: 100%;
+    }
+  
+    .main-cards {
+      display: block;
+      gap: 10px;
+      margin-bottom: 0;
+    }
+  
+    .graphBox .box {
+      position: relative;
+      background: #f7f3f3;
+      padding: 20px;
+      width: 100%;
+      box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+      border-radius: 20px;
+      margin-bottom: 40px;
+    }
+  }
+  
