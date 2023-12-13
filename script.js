@@ -1,7 +1,7 @@
-//DENGUE
-
+//DENGUE// 
 var dengue1 = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(dengue1, {
+  
   type: 'bar',
   data: {
     labels: ['Norte', 'Nordeste', 'Sudeste', 'Sul', 'Centro-Oeste' ],
@@ -27,6 +27,7 @@ var myChart = new Chart(dengue1, {
 var dengue2 = document.getElementById('myChart2').getContext('2d');
 var myChart2 = new Chart(dengue2, {
   type: 'line',
+  
   data: {
     labels: ['Norte', 'Nordeste', 'Sudeste', 'Sul', 'Centro-Oeste'],
     datasets: [{
@@ -54,6 +55,7 @@ var myChart2 = new Chart(dengue2, {
   options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Distribuição dos óbitos confirmados, por região'
       }
     }
@@ -83,6 +85,7 @@ var myChart3 = new Chart(zika1, {
   options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Número de casos da Zika. Brasil, 2022'
       }
     }
@@ -118,6 +121,7 @@ var myChart4 = new Chart(zika2, {
   options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Distribuição dos óbitos confirmados, por região'
       }
     }
@@ -147,6 +151,7 @@ var myChart5 = new Chart(chikungunya1, {
   options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Número de casos da Chikungunya. Brasil, 2022'
       }
     }
@@ -187,6 +192,7 @@ var myChart6 = new Chart(chikungunya2, {
   options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Distribuição dos óbitos confirmados, por região'
       }
     }
@@ -218,6 +224,7 @@ var myChart7 = new Chart(malaria1, {
   options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Casos de janeiro a junho. Brasil, 2021'
       }
     }
@@ -238,6 +245,7 @@ var myChart8 = new Chart(malaria2, {
   options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Casos de janeiro a junho. Brasil, 2021'
       }
     }
@@ -271,6 +279,7 @@ var myChart9 = new Chart(leishmaniose1, {
   options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Número de casos da Leishmaniose. Brasil, 2019 a 2021'
       }
     }
@@ -300,6 +309,7 @@ var myChart10 = new Chart(leishmaniose2, {
   options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Óbitos de leishmaniose, por região. Brasil, 2018 a 2020'
       }
     }
@@ -324,6 +334,7 @@ var myChart11 = new Chart(chagas1, {
   options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Número de casos da Doença de Chagas, por região. Brasil, 2020'
       }
     }
@@ -344,6 +355,7 @@ var myChart12 = new Chart(chagas2, {
     options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Óbitos registrados pela Doença de Chagas. Brasil, 2020'
       }
     }
@@ -367,6 +379,7 @@ var myChart13 = new Chart(tuberculose1, {
     options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Indicador epidemiológico de casos, por região'
       }
     }
@@ -436,6 +449,7 @@ var myChart16 = new Chart(leptospirose2, {
     options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Índice de mortalidade pela leptospirose no Brasil em 2020'
       }
     }
@@ -465,6 +479,7 @@ var myChart17 = new Chart(hanseniase1, {
   options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Segundo faixa etária e sexo. Brasil, 2016 a 2020'
       }
     }
@@ -507,6 +522,7 @@ var myChart18 = new Chart(hanseniase2, {
    options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Proporção de novos casos, segundo raça/cor e região. Brasil, 2016 a 2020'
       }
     }
@@ -531,6 +547,7 @@ var myChart19 = new Chart(esquistossomose1, {
   options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Número de casos de esquistossomose. Brasil, 2013 a 2019.'
       }
     }
@@ -554,6 +571,7 @@ var myChart20 = new Chart(ascaridiase1, {
    options: {
       title: {
         display: true,
+        fontSize: 17,
         text: 'Número de casos de pessoas infectadas com Ascaris lumbricoides. Brasil, 2015 a 2019.'
       }
     }

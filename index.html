@@ -10,71 +10,56 @@
   <link rel="icon" type="image/png" href="imagens/icon.png">
   <link rel="stylesheet" href="style.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
-
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
 
   
-  <title>Dados epidemiológicos</title>
+  <title>Dados Epidemiológicos</title>
 </head>
+
+
+
 <body>
-    <header>
-        <div class="menu-btn">
-          <i class="fas fa-bars"></i>
-        </div>
-        <div class="side-bar active">
-          <div class="close-btn">
-            <i class="fas fa-times"></i>
-          </div>
-          <div class="menu">
-            <div class="item"><a href="index.html"><i class="fas fa-desktop"></i>Introdução</a></div>
-            <div class="item">
-              <a class="sub-btn"><i class="fas fa-table"></i>Viroses<i class="fas fa-angle-right dropdown"></i></a>
-              <div class="sub-menu">
-                <a href="#dengue" class="sub-item">Dengue</a>
-                <a href="#zika" class="sub-item">Zika Vírus</a>
-                <a href="#chikungunya" class="sub-item">Chikungunya</a>
-              </div>
-            </div>
-            
-            
-            <div class="item">
-              <a class="sub-btn"><i class="fas fa-table"></i>Protozooses<i class="fas fa-angle-right dropdown"></i></a>
-              <div class="sub-menu">
-                <a href="#malaria" class="sub-item">Malária</a>
-                <a href="#leishmaniose" class="sub-item">Leishmaniose</a>
-                <a href="#chagas" class="sub-item">Doença de Chagas</a>
-              </div>
-            </div>
+<header class="cabecalho">
+  <div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar active">
+      <div class="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="menu">      
+        <div class="item"><a href="#"><i class="fas fa-info-circle"></i>Homepage</a></div>
+        <div class="item"><a href="#"><i class="fas fa-microscope"></i>Lab. Virtual de Microscópia</a></div>
+        <div class="item"><a href="#"><i class="fas fa-chart-line"></i>Informativo sobre doenças</a></div>
+      </div>
+    </div>
+  </div>
 
-            <div class="item">
-              <a class="sub-btn"><i class="fas fa-table"></i>Bacterioses<i class="fas fa-angle-right dropdown"></i></a>
-              <div class="sub-menu">
-                <a href="#tuberculose" class="sub-item">Tuberculose</a>
-                <a href="#leptospirose" class="sub-item">Leptospirose</a>
-                <a href="#hanseniase" class="sub-item">Hanseníase</a>
-              </div>
-            </div>
+  <div>
+  <p  class="seta"><a href="#voltarmenu"><img src="imagens/seta.png"></a></p>
 
-            <div class="item">
-              <a class="sub-btn"><i class="fas fa-table"></i>Verminoses<i class="fas fa-angle-right dropdown"></i></a>
-              <div class="sub-menu">
-                <a href="#esquistossomose" class="sub-item">Esquistossomose</a>
-                <a href="#ascaridiase" class="sub-item">Ascaridíase</a>
-              </div>
-            </div>
-            
-            <div class="item"><a href="#"><i class="fas fa-info-circle"></i>Homepage</a></div>
-            <div class="item"><a href="#"><i class="fas fa-info-circle"></i>Microscópio virtual</a></div>
-            <div class="item"><a href="#"><i class="fas fa-info-circle"></i>Doenças - Explicação</a></div>
-          </div>
-        </div>
-    
+  </div>
 
-    </header>
+  <div>
+    <button type="button" id="btnAumentar">A+</button>
+  </div>
 
+  <div>
+    <button type="button" id="btnDiminuir">A-</button>
+  </div>
+
+
+  
+</header>
   <!--CAPA-->
   <div class="fundo">
         <div class="header-content">
@@ -89,56 +74,80 @@
    
 <div class="texto" style="width: 98%; margin-left: 10px;">
   <h1 class="titulo">Sejam Bem-Vindos</h1>
-  <p>Já teve aqueles momentos em que você se perguntou: "O que é exatamente essa doença?" ou "Como elas afetam as pessoas no Brasil?" Muitas vezes, nos deparamos com nomes de doenças complicadas e intrigantes, mas temos uma vontade genuína de entender melhor o que está acontecendo. É nesse ponto que nosso site busca retratar por meio de gráficos os dados mais recentes divulgados pelo Governo Federal a respeito da incidência de mazelas no país.
-  <br><br>
+  <p >Já teve aqueles momentos em que você se perguntou: "O que é exatamente essa doença?" ou "Como elas afetam as pessoas no Brasil?" Muitas vezes, nos deparamos com nomes de doenças complicadas e intrigantes, mas temos uma vontade genuína de entender melhor o que está acontecendo. É nesse ponto que nosso site busca retratar por meio de gráficos os dados mais recentes divulgados pelo Governo Federal a respeito da incidência de mazelas no país.
+  </p><p id="voltarmenu">
     Nós compreendemos que nem todo mundo possui formação médica ou científica, então fizemos o trabalho árduo de traduzir informações complexas e atuais em gráficos simples e de fácil compreensão. Afinal, o conhecimento é uma ferramenta poderosa, e estamos aqui para fornecer a você todo o poder de compreensão.
     Convidamos você a visitar nosso site, explorar nossos gráficos coloridos e desvendar tudo o que deseja saber. E se você estiver interessado em se aprofundar ainda mais, temos artigos informativos que explicam tudo em detalhes. Esperamos que gostem!!!
     </p></div>
+     <br><br>
+    <h2 style="text-align: center;font-size: 32px;">DOENÇAS:</h2>
     <br>
-
-<h1 id="dengue">DENGUE</h1>
-<main class="main-container">
-        <div class="main-title">
-          <p class="font-weight-bold">Estados com maiores índices de casos de dengue:</p>
-        </div>
-
-        <div class="main-cards">
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">SÃO PAULO</p>
-              <span class="material-icons-outlined text-blue"></span>
+    <div class="summary" >
+      <a href="#dengue">DENGUE</a>
+      <a href="#zika">ZIKA VÍRUS</a>
+      <a href="#chikungunya">CHIKUNGUNYA</a>
+      <a href="#malaria">MALÁRIA</a>
+      <a href="#leishmaniose">LEISHMANIOSE</a>
+      <a href="#chagas">DOENÇA DE CHAGAS</a>
+     
+    </div>
+    <div class="summary" >
+      <a href="#tuberculose">TUBERCULOSE</a>
+      <a href="#leptospirose">LEPTOSPIROSE</a>
+      <a href="#hanseniase">HANSENÍASE</a>
+      <a href="#esquistossomose">ESQUISTOSSOMOSE</a>
+      <a href="#ascaridiase">ASCARIDÍASE</a>     
+    </div>
+    <br>
+    <h1 id="dengue">DENGUE</h1>
+    <main class="main-container">
+            <div class="main-title">
+              <p class="font-weight-bold">Estados com maiores índices de casos de dengue:</p>
             </div>
-            <span class="text-primary font-weight-bold">355.479</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">GOIÁS</p>
-              <span class="material-icons-outlined text-orange"></span>
+    
+            <div class="main-cards">
+    
+              <div class="card">
+                <div class="card-inner">
+                  <p class="text-primary">SÃO PAULO</p>
+                  <span class="material-icons-outlined text-blue"></span>
+                </div>
+                <span class="text-primary font-weight-bold">355.479</span>
+              </div>
+    
+              <div class="card">
+                <div class="card-inner">
+                  <p class="text-primary">GOIÁS</p>
+                  <span class="material-icons-outlined text-orange"></span>
+                </div>
+                <span class="text-primary font-weight-bold">214.772</span>
+              </div>
+    
+              <div class="card">
+                <div class="card-inner">
+                  <p class="text-primary">PARANÁ</p>
+                  <span class="material-icons-outlined text-green"></span>
+                </div>
+                <span class="text-primary font-weight-bold">163.943</span>
+              </div>
+    
+              <div class="card">
+                <div class="card-inner">
+                  <p class="text-primary">MINAS GERAIS</p>
+                  <span class="material-icons-outlined text-red"></span>
+                </div>
+                <span class="text-primary font-weight-bold">93.412</span>
+              </div>
+              <div class="card">
+                <div class="card-inner">
+                  <p class="text-primary">RIO GRANDE DO NORTE</p>
+                  <span class="material-icons-outlined text-purple"></span>
+                </div>
+                <span class="text-primary font-weight-bold">42.673</span>
+              </div>
             </div>
-            <span class="text-primary font-weight-bold">214.772</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">PARANÁ</p>
-              <span class="material-icons-outlined text-green"></span>
-            </div>
-            <span class="text-primary font-weight-bold">163.943</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">MINAS GERAIS</p>
-              <span class="material-icons-outlined text-red"></span>
-            </div>
-            <span class="text-primary font-weight-bold">93.412</span>
-          </div>
-
-        </div>
-
-
+    
+    
   <div class="graphBox">
     <div class="box">
       <p class="tituloGrafico">Casos confirmados</p>
@@ -154,12 +163,12 @@
       <p class="fonte">Fonte: Sinan On-line</p>
     </div>
   </div>
-
+ 
 </main>
 
 
   <!--ZIKA VÍRUS-->
-<h1 id="zika">ZIKA VÍRUS</h1>
+  <h1 id="zika">ZIKA VÍRUS</h1>
   <main class="main-container">
         <div class="main-title">
           <p class="font-weight-bold">Estados com maiores índices de casos de zika vírus:</p>
@@ -168,16 +177,8 @@
         <div class="main-cards">
           <div class="card">
             <div class="card-inner">
-              <p class="text-primary">RIO GRANDE DO NORTE</p>
-              <span class="material-icons-outlined text-blue"></span>
-            </div>
-            <span class="text-primary font-weight-bold">3.757</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
               <p class="text-primary">BAHIA</p>
-              <span class="material-icons-outlined text-orange"></span>
+              <span class="material-icons-outlined text-blue"></span>
             </div>
             <span class="text-primary font-weight-bold">1.177</span>
           </div>
@@ -197,7 +198,22 @@
             </div>
             <span class="text-primary font-weight-bold">614</span>
           </div>
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">CEARÁ</p>
+              <span class="material-icons-outlined text-orange"></span>
+            </div>
+            <span class="text-primary font-weight-bold">497</span>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">RIO GRANDE DO NORTE</p>
+              <span class="material-icons-outlined text-purple"></span>
+            </div>
+            <span class="text-primary font-weight-bold">3.757</span>
+          </div>
         </div>
+    
     
   <div class="graphBox">
     <div class="box">
@@ -215,50 +231,57 @@
       <p class="fonte">Fonte:  Resp-Microcefalia</p>
     </div>
   </div>
-
+ 
 </main>
 
     <!--CHIKUNGUNYA-->
-<h1 id="chikungunya">CHIKUNGUNYA</h1>
-  <main class="main-container">
-        <div class="main-title">
-          <p class="font-weight-bold">Estados com maiores índices de casos de chikungunya:</p>
-        </div>
-
-        <div class="main-cards">
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">PARAÍBA</p>
-              <span class="material-icons-outlined text-blue"></span>
-            </div>
-            <span class="text-primary font-weight-bold">18.948</span>
+    <h1 id="chikungunya">CHIKUNGUNYA</h1>
+    <main class="main-container">
+          <div class="main-title">
+            <p class="font-weight-bold">Estados com maiores índices de casos de chikungunya:</p>
           </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">BAHIA</p>
-              <span class="material-icons-outlined text-orange"></span>
+  
+          <div class="main-cards">
+            <div class="card">
+              <div class="card-inner">
+                <p class="text-primary">PARAÍBA</p>
+                <span class="material-icons-outlined text-blue"></span>
+              </div>
+              <span class="text-primary font-weight-bold">18.948</span>
             </div>
-            <span class="text-primary font-weight-bold">18.326</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">PERNAMBUCO</p>
-              <span class="material-icons-outlined text-green"></span>
+  
+            <div class="card">
+              <div class="card-inner">
+                <p class="text-primary">BAHIA</p>
+                <span class="material-icons-outlined text-orange"></span>
+              </div>
+              <span class="text-primary font-weight-bold">18.326</span>
             </div>
-            <span class="text-primary font-weight-bold">16.832</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">RIO GRANDE DO NORTE</p>
-              <span class="material-icons-outlined text-red"></span>
+  
+            <div class="card">
+              <div class="card-inner">
+                <p class="text-primary">PERNAMBUCO</p>
+                <span class="material-icons-outlined text-green"></span>
+              </div>
+              <span class="text-primary font-weight-bold">16.832</span>
             </div>
-            <span class="text-primary font-weight-bold">14.068</span>
+  
+            <div class="card">
+              <div class="card-inner">
+                <p class="text-primary">PIAUÍ</p>
+                <span class="material-icons-outlined text-red"></span>
+              </div>
+              <span class="text-primary font-weight-bold">10.688</span>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <p class="text-primary">RIO GRANDE DO NORTE</p>
+                <span class="material-icons-outlined text-purple"></span>
+              </div>
+              <span class="text-primary font-weight-bold">14.068</span>
+            </div>
           </div>
-        </div>
-    
+      
   <div class="graphBox">
     <div class="box">
       <p class="tituloGrafico">Casos confirmados</p>
@@ -275,7 +298,7 @@
       <p class="fonte">Fonte: Sinan Net e Online</p>
     </div>
   </div>
-
+ 
 </main>
 
 <!--MALÁRIA-->
@@ -317,6 +340,13 @@
             </div>
             <span class="text-primary font-weight-bold">5.596</span>
           </div>
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">RIO GRANDE DO NORTE</p>
+              <span class="material-icons-outlined text-purple"></span>
+            </div>
+            <span class="text-primary font-weight-bold">0</span>
+          </div>
         </div>
     
   <div class="graphBox">
@@ -335,12 +365,13 @@
       <p class="fonte">Fonte: Sivep-Malária/SVS/MS e Sinan/SVS/MS</p>
     </div>
   </div>
+ 
 </main>
 
 
 
   <!--LEISHMANIOSE-->
-<h1 id="leishmaniose">LEISHMANIOSE</h1>
+  <h1 id="leishmaniose">LEISHMANIOSE</h1>
   <main class="main-container">
         <div class="main-title">
           <p class="font-weight-bold">Estados com maiores índices de casos de leishmaniose (somatório dos anos 2019, 2020 e 2021):</p>
@@ -378,7 +409,15 @@
             </div>
             <span class="text-primary font-weight-bold">579</span>
           </div>
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">RIO GRANDE DO NORTE</p>
+              <span class="material-icons-outlined text-purple"></span>
+            </div>
+            <span class="text-primary font-weight-bold">90</span>
+          </div>
         </div>
+    
     
   <div class="graphBox">
     <div class="box">
@@ -396,6 +435,7 @@
       <p class="fonte">Fonte: Sinan/SVS/MS</p>
     </div>
   </div>
+ 
 </main>
 
 
@@ -438,6 +478,13 @@
             </div>
             <span class="text-primary font-weight-bold">3</span>
           </div>
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">RIO GRANDE DO NORTE</p>
+              <span class="material-icons-outlined text-purple"></span>
+            </div>
+            <span class="text-primary font-weight-bold">0</span>
+          </div>
         </div>
     
   <div class="graphBox">
@@ -456,11 +503,12 @@
       <p class="fonte">Fonte:  Sistema de Informação sobre Mortalidade (SIM)/MS</p>
     </div>
   </div>
+ 
 </main>
 
 
   <!--TUBERCULOSE-->
-<h1 id="tuberculose">TUBERCULOSE</h1>
+  <h1 id="tuberculose">TUBERCULOSE</h1>
   <main class="main-container">
         <div class="main-title">
           <p class="font-weight-bold">Estados com maiores índices de casos de tuberculose:</p>
@@ -498,6 +546,13 @@
             </div>
             <span class="text-primary font-weight-bold">4.688</span>
           </div>
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">RIO GRANDE DO NORTE</p>
+              <span class="material-icons-outlined text-purple"></span>
+            </div>
+            <span class="text-primary font-weight-bold">1.353</span>
+          </div>
         </div>
     
   <div class="graphBox">
@@ -516,10 +571,13 @@
       <p class="fonte">Fonte: Sistema de Informação de Agravos de Notificação/Secretarias Estaduais de Saúde/Ministério da Saúde; Instituto Brasileiro de Geografia e Estatística</p>
     </div>
   </div>
+ 
+
 </main>
 
 
 <!--LEPTOSPIROSE-->
+
 <h1 id="leptospirose">LEPTOSPIROSE</h1>
   <main class="main-container">
         <div class="main-title">
@@ -558,6 +616,13 @@
             </div>
             <span class="text-primary font-weight-bold">284</span>
           </div>
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">RIO GRANDE DO NORTE</p>
+              <span class="material-icons-outlined text-purple"></span>
+            </div>
+            <span class="text-primary font-weight-bold">19</span>
+          </div>
         </div>
     
   <div class="graphBox">
@@ -576,51 +641,59 @@
       <p class="fonte">Fonte: Sinan/Ministério da Saúde.</p>
     </div>
   </div>
+ 
+
 </main>
 
 
 
-  <!--HANSENÍASE-->
-<h1 id="hanseniase">HANSENÍASE</h1>
+  <!--HANSENÍASE--><h1 id="hanseniase">HANSENÍASE</h1>
   <main class="main-container">
-        <div class="main-title">
-          <p class="font-weight-bold">Estados com maiores índices de casos de hanseníase:</p>
+    <div class="main-title">
+      <p class="font-weight-bold">Estados com maiores índices de casos de hanseníase:</p>
+    </div>
+
+    <div class="main-cards">
+      <div class="card">
+        <div class="card-inner">
+          <p class="text-primary">MATO GROSSO</p>
+          <span class="material-icons-outlined text-blue"></span>
         </div>
+        <span class="text-primary font-weight-bold">17.738</span>
+      </div>
 
-        <div class="main-cards">
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">MATO GROSSO</p>
-              <span class="material-icons-outlined text-blue"></span>
-            </div>
-            <span class="text-primary font-weight-bold">17.738</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">MARANHÃO</p>
-              <span class="material-icons-outlined text-orange"></span>
-            </div>
-            <span class="text-primary font-weight-bold">14.658</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">PARÁ</p>
-              <span class="material-icons-outlined text-green"></span>
-            </div>
-            <span class="text-primary font-weight-bold">11.890</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">PERNAMBUCO</p>
-              <span class="material-icons-outlined text-red"></span>
-            </div>
-            <span class="text-primary font-weight-bold">10.637</span>
-          </div>
+      <div class="card">
+        <div class="card-inner">
+          <p class="text-primary">MARANHÃO</p>
+          <span class="material-icons-outlined text-orange"></span>
         </div>
-    
+        <span class="text-primary font-weight-bold">14.658</span>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <p class="text-primary">PARÁ</p>
+          <span class="material-icons-outlined text-green"></span>
+        </div>
+        <span class="text-primary font-weight-bold">11.890</span>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <p class="text-primary">PERNAMBUCO</p>
+          <span class="material-icons-outlined text-red"></span>
+        </div>
+        <span class="text-primary font-weight-bold">10.637</span>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <p class="text-primary">RIO GRANDE DO NORTE</p>
+          <span class="material-icons-outlined text-purple"></span>
+        </div>
+        <span class="text-primary font-weight-bold">1.095</span>
+      </div>
+    </div>
+
   <div class="graphBox2">
     <div class="box2">
       <p class="tituloGrafico">Casos confirmados</p>
@@ -639,52 +712,61 @@
     </div>
     
   </div>
+ 
+
 </main>
    
 
 
 
     <!--ESQUISTOSSOMOSE-->
-<h1 id="esquistossomose">ESQUISTOSSOMOSE</h1>
-  <main class="main-container">
-        <div class="main-title">
-          <p class="font-weight-bold">Estados com maiores índices de casos de esquistossomose:</p>
-        </div>
-
-        <div class="main-cards">
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">PARAÍBA</p>
-              <span class="material-icons-outlined text-blue"></span>
-            </div>
-            <span class="text-primary font-weight-bold">18.948</span>
+    <h1 id="esquistossomose">ESQUISTOSSOMOSE</h1>
+    <main class="main-container">
+          <div class="main-title">
+            <p class="font-weight-bold">Estados com maiores índices de óbitos por esquistossomose (2019-2022):</p>
           </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">BAHIA</p>
-              <span class="material-icons-outlined text-orange"></span>
+  
+          <div class="main-cards">
+            <div class="card">
+              <div class="card-inner">
+                <p class="text-primary">PERNAMBUCO</p>
+                <span class="material-icons-outlined text-blue"></span>
+              </div>
+              <span class="text-primary font-weight-bold">495</span>
             </div>
-            <span class="text-primary font-weight-bold">18.326</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">PERNAMBUCO</p>
-              <span class="material-icons-outlined text-green"></span>
+  
+            <div class="card">
+              <div class="card-inner">
+                <p class="text-primary">ALAGOAS</p>
+                <span class="material-icons-outlined text-orange"></span>
+              </div>
+              <span class="text-primary font-weight-bold">165</span>
             </div>
-            <span class="text-primary font-weight-bold">16.832</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">RIO GRANDE DO NORTE</p>
-              <span class="material-icons-outlined text-red"></span>
+  
+            <div class="card">
+              <div class="card-inner">
+                <p class="text-primary">MINAS GERAIS</p>
+                <span class="material-icons-outlined text-green"></span>
+              </div>
+              <span class="text-primary font-weight-bold">269</span>
             </div>
-            <span class="text-primary font-weight-bold">14.068</span>
+  
+            <div class="card">
+              <div class="card-inner">
+                <p class="text-primary">ESPÍRITO SANTO</p>
+                <span class="material-icons-outlined text-red"></span>
+              </div>
+              <span class="text-primary font-weight-bold">29</span>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <p class="text-primary">RIO GRANDE DO NORTE</p>
+                <span class="material-icons-outlined text-purple"></span>
+              </div>
+              <span class="text-primary font-weight-bold">0</span>
+            </div>
           </div>
-        </div>
-    
+      
   <div class="graphBox2">
     <div class="box2">
       <p class="tituloGrafico">Casos confirmados</p>
@@ -695,6 +777,8 @@
     </div>
     
   </div>
+ 
+
 </main>
 
 
@@ -737,6 +821,13 @@
             </div>
             <span class="text-primary font-weight-bold">9.071</span>
           </div>
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">RIO GRANDE DO NORTE</p>
+              <span class="material-icons-outlined text-purple"></span>
+            </div>
+            <span class="text-primary font-weight-bold">2.171</span>
+          </div>
         </div>
     
   <div class="graphBox2">
@@ -748,6 +839,8 @@
       <p class="fonte">Fonte: Sistema de Informação do Programa de Controle da Esquistossomose – SISPCE/SVS/MS.</p>
     </div>
   </div>
+ 
+
 </main>
  
 <!--OBS-->
@@ -773,7 +866,7 @@
         <br>
         <p id="ref-par">SAÚDE, Ministério da. <strong>Boletim Epidemiológico Vol.53 Nº20</strong>. Disponível em: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/edicoes/2022/boletim-epidemiologico-vol-53-no20/view. Acesso em: 20 jun. 2023.</p>
         <br>
-        <p id="ref-par">SAÚDE, Ministério da. <strong>Casos confirmados de leishmaniose visceral, Brasil<strong>. Disponível em: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/l/leishmaniose-visceral/arquivos/atualizacao-21-10-2022/lv-casos.pdf. Acesso em: 17 jun. 2023.</p>
+        <p id="ref-par">SAÚDE, Ministério da. <strong>Casos confirmados de leishmaniose visceral, Brasil</strong>. Disponível em: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/l/leishmaniose-visceral/arquivos/atualizacao-21-10-2022/lv-casos.pdf. Acesso em: 17 jun. 2023.</p>
         <br>
         <p id="ref-par">SAÚDE, Ministério da. <strong>Esquistossomose - Publicações</strong>. Disponível em: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/e/esquistossomose/publicacoes. Acesso em: 22 jun. 2023.</p>
         <br>
@@ -803,7 +896,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="copyright">
+        <p class="copyright" style="text-align: center;">
           <strong>Desenvolvido pelas alunas:</strong>
           <br>Camile Joice Rocha do Nascimento;
             <br> Emine Aissa Franco do Nascimento;
