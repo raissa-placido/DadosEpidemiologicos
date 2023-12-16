@@ -34,18 +34,18 @@ body {
 }
 
 /*SOBRE A FONTE (A+ E A-)*/
-.titulo-header{
+.titulo-header {
   font-size: 20px;
 }
 
-#btnAumentar{
+#btnAumentar {
   color: #fff;
   font-size: 30px;
   background-color: #a72c0a;
   border: none;
 }
 
-#btnDiminuir{
+#btnDiminuir {
   color: #fff;
   background-color: #a72c0a;
   border: none;
@@ -59,7 +59,8 @@ main {
   display: flex;
   justify-content: center;
   /*margin-bottom: 20px;*/
-  font-weight: bold; /* texto em negrito */
+  font-weight: bold;
+  /* texto em negrito */
   text-align: center;
   margin-left: 80px;
   margin-right: 80px;
@@ -68,25 +69,31 @@ main {
 .summary a {
   text-decoration: none;
   color: #fff;
-  background-color: #990d0d; /* Laranja */
+  background-color: #990d0d;
+  /* Laranja */
   padding: 10px 30px;
   margin: 5px 5px;
   text-align: center;
- border-radius: 5px;
+  border-radius: 5px;
   border: solid 2px #990d0d;
   font-size: 15px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .summary a:hover {
-  background-color: #b81e1e; /* Laranja mais escuro */
+  background-color: #b81e1e;
+  /* Laranja mais escuro */
 }
-.seta{
+
+.seta {
   width: 30px;
   height: 30px;
 }
-#sumario1{
- padding: 10px 600px;
+
+#sumario1 {
+  padding: 10px 600px;
 }
+
 /* ************
         CAPA
   */
@@ -249,7 +256,7 @@ footer {
   color: white;
   font-size: 18px;
   padding: 20px;
-  
+
 }
 
 .footer-top {
@@ -290,7 +297,7 @@ footer {
 
 .footer-bottom {
   padding-block: 35px;
- /* text-align: center;
+  /* text-align: center;
   border-block-start: 1px solid var(--cultured_20);*/
 }
 
@@ -353,9 +360,10 @@ footer {
 .card:nth-child(4) {
   border-left: 7px solid #ff7857;
 }
-.card:nth-child(5){
-  border-left: 7px solid  #82e482;
-  background-color:  #64e9ce;
+
+.card:nth-child(5) {
+  border-left: 7px solid #82e482;
+  background-color: #64e9ce;
 }
 
 .card>span {
@@ -377,11 +385,18 @@ footer {
   font-size: 35px;
 }
 
-  .card:nth-child(5) {
-    border-left: 7px solid #f6f5f5;
-    background-color:#A42914;
-    color: rgb(254, 252, 252);
-  }
+.card2 {
+  border-left: 7px solid #f6f5f5;
+  background-color: #990d0d;
+  color: rgb(254, 252, 252);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
 
 .graphBox {
   position: relative;
